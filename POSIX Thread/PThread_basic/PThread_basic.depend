@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1510240551 source:d:\university courses\advanced operating system\posix thread\pthread_basic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	<windows.h>
+
