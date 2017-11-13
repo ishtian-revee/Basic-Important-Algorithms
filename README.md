@@ -42,6 +42,13 @@ The applications it contains are:
 * Basic Matrix Multiplication
 * Matrix Chain Multiplication
 
+### POSIX Thread
+
+The application it contains are:
+
+* Basic PThread
+* Matrix Chain Multiplication by using PThread
+
 ### Minimum Spanning Tress Algorithms
 
 The applications it contains are:
