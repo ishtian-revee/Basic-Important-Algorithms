@@ -4,7 +4,7 @@
 #define INT_MAX 99999
 
 /*
-		Author: Ishtian, Rahim Md.
+	Author: Ishtian, Rahim Md.
 */
 
 /*
@@ -27,23 +27,23 @@ gcc mcm_pthread.c -o mcm -lpthread
 */
 
 // global scope
-int size = 5;									// holds the size of the array
-int arr[5] = {1, 3, 4, 8, 9};	// 4 matrices
-int result[9][9];							// result matrix
+int size = 5;		// holds the size of the array
+int arr[5] = {1, 3, 4, 8, 9};		// 4 matrices
+int result[9][9];		// result matrix
 
 // function ptototypes
 void *mcm(void *param);
 
 int main(int argc, char *argv){
 
-	pthread_t thread;           			// thread id
-  pthread_attr_t attr;        			// set of thread attributes
-  pthread_attr_init(&attr);   			// get the default attribute
+	pthread_t thread;           	// thread id
+  	pthread_attr_t attr;        		// set of thread attributes
+  	pthread_attr_init(&attr);   		// get the default attribute
 	int *arg = malloc(sizeof(*arg));	// declaring the argument in int type
 	*arg = size;				// setting the pointer
 	pthread_create(&thread, &attr, mcm, arg);	// creating the thread
 
-	pthread_join(thread, NULL);			// main thread will wait till all threads are done
+	pthread_join(thread, NULL);		// main thread will wait till all threads are done
 }
 
 void *mcm(void *var){
